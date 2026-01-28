@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Tente abrir o site em vários dispositivos diferentes ou simplesmente diminuia o tamanho do seu navegador</h1>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1200px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Imagem Flexivel">
+    </picture>
+    <h2>Áudios</h2>
+
+    <button>
+        <p>VECNA</p>
+        <audio src="midia/vecna.mp3" controls type="audio/mpeg"></audio></button>
+        <br>
+    <button>
+        <p>MALDIÇÃO VECNA</p>
+        <audio src="midia/vecna2.mp3" controls type="audio/mpeg"></audio>
+    </button>
+        
+    <h2>Vídeos</h2>
+
+    <video width="600" height="400" poster="images/foto-m.png" src="midia/b.mp4" controls type="video/mp4"></video>
+
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/Li6outYVUgw?si=zx8FFHZdsHLymLsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>

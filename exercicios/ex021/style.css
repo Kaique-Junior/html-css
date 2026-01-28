@@ -1,0 +1,17 @@
+
+
+h1{
+    color: white;
+    text-align: center;
+    background-image: radial-gradient(circle, black, rgb(80, 80, 80));
+    font: normal bold 2em Arial, sans-serif;
+    padding: 30px 30px;
+    margin: auto;
+    outline: 8px solid black;
+}
+
+div{
+    padding: 30px 30px;
+    margin: auto;
+    outline: auto solid black;
+}

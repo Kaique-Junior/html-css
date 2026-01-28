@@ -1,0 +1,29 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#listamenu01 {
+    text-align: left;
+    background-color: aquamarine;
+    color: blue;
+}
+
+#menu01 > ul {
+    display: none;
+}
+
+#menu01 {
+   background-color: blueviolet;
+   width: 300px; 
+   color: white;
+   text-align: center;
+   font-weight: bold;
+}
+
+#menu01:hover > ul {
+    display: block;
+}
+
+.list:hover{
+    color: black;
+}

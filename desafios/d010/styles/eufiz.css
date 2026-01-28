@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Android;
+    src: url(fontes/idroid.otf);
+}
+
+:root {
+    --body: #84E1AD;
+    --header: #3DDA84;
+    --nav: #195a36;
+    --titulos: #21613F;
+    --fotvi: #1A5C38;
+    --sabermais: #2FA866;
+    --list: #C5EBD6;
+}
+
+p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body{
+    margin: auto;
+    background-color: var(--body);
+}
+
+body > main{
+    margin: auto;
+}
+
+/*Cabeçalho*/
+header {
+    padding: 16px;
+    background-image: linear-gradient(to bottom, var(--header), #1A5C38);
+    box-shadow: 5px 10px 10px black;
+}
+
+/*Filhos*/
+header>h1 {
+    font-size: x-large;
+    padding-bottom: 16px;
+}
+
+/*Fim Filhos*/
+
+.header {
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 3px 3px 8px black;
+}
+
+nav {
+    padding: 12px 20px;
+    margin: auto;
+    background-color: var(--nav);
+    word-spacing: 1em;
+}
+
+nav > a:hover{
+    background-color: rgba(255, 255, 255, 0.589);
+    padding: 8px 15px;
+    transition: 0.4s;
+}
+
+#special {
+    word-spacing: normal;
+}
+
+.menu {
+    color: white;
+    text-decoration: none;
+    text-shadow: 3px 3px 8px black;
+}
+/*Fim Cabeçalho*/
+
+/*Principal*/
+main{
+    background-color: white;
+    width: 900px;
+    padding-top: 10px;
+    box-shadow: 3px 3px 16px black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main > article{
+    padding: 10px;
+    text-indent: 1em;
+}
+
+main > article > h1{
+    color: var(--titulos);
+    font-family: 'Android', sans-serif;
+}
+
+main > article > h2{
+    color: var(--titulos);
+    padding: 3px;
+    background-image: linear-gradient(to right, #C4E9D4, white);
+    font-family: 'Android', sans-serif;  
+}
+
+#fim{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: var(--sabermais);
+    font-size: large;
+    padding: 10px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.paddingbottom{
+    padding-bottom: 20px;
+}
+
+.lista{
+    background-color: var(--list);
+    border-radius: 20px 20px 20px 20px;
+}
+
+.imagescenter{
+    display: flex;
+    justify-content: center;
+}
+
+.background{
+    background-color: var(--fotvi);
+    padding: 30px;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+}
+/*Fim Principal*/
+
+footer{
+    background-color: var(--fotvi);
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+ul{
+    list-style-type: square;
+}
+
+#nome{
+    font-weight: bolder;
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+    background-color: darkgray;
+}
+
+h1{
+    text-align: center;
+    background-color: rgba(107, 59, 41, 0.733);
+}
+
+div{
+    background-color: rgba(0, 0, 0, 0.315);
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+#a:active{
+    display: none;
+}
