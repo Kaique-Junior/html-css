@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-image: url("imagens/espaco.jpg");
+    background-size: cover;
+}
+
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }}
+
+img{
+    width: 400px;
+    display: block;
+    margin: auto;
+    animation: girar 10s linear infinite;
+}
