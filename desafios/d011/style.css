@@ -3,6 +3,7 @@
 body{
     background-image: url("imagens/espaco.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 @keyframes girar {
