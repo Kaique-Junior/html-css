@@ -23,8 +23,9 @@ header{
 
 header > h1{
     font-family: 'Passion One', sans-serif;
+    font-variant: small-caps;
     margin-bottom: 0px;
-    font-size: 2.5em;
+    font-size: 3.2em;
     color: white;
     text-align: center;
 }
@@ -50,8 +51,8 @@ header a:hover, footer a:hover{
 /* Sections */
 
 section{
-    font: italic bold larger var(--fonte3);
-    line-height: 35px;
+    font: italic bold 1.3em var(--fonte3);
+    line-height: 40px;
     text-align: left;
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -68,12 +69,13 @@ section.imagem{
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0, 0.473);
-    height: 400px ;
+    height: 300px ;
 }
  
 section.imagem > p{
     display: inline-block;
-    padding: 10px;
+    
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.226);
     text-shadow: 1px 1px 0px black;
     color: white;
