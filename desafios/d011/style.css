@@ -18,7 +18,7 @@ body{
 
 img{
     width: 400px;
-    display: block;
-    margin: auto;
+    display: flex;
+    justify-content: center;
     animation: girar 10s linear infinite;
 }
