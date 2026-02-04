@@ -1,23 +1,44 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+}
+
 body{
-    background-color: darkgray;
+    background-color: rgba(174, 238, 174, 0.596);
 }
 
-h1{
+main{
+    background-color: rgb(62, 182, 58);
+    margin: auto;
+    max-width: 800px;
+    height: 500px;
+}
+
+header{
+    background-image: url(images/favicon.png);
+    background-color: rgb(123, 206, 127);
+    color: rgb(230, 230, 230);
+    text-shadow: 3px 3px 5px black;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
-    background-color: rgba(107, 59, 41, 0.733);
+    font-variant: small-caps;
 }
 
-div{
-    background-color: rgba(0, 0, 0, 0.315);
-}
 
-img{
-    width: 150px;
-    height: 150px;
-}
-
-#a:active{
-    display: none;
+main > button{
+    background-image: url(images/favicon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    display: inline-block;
 }
