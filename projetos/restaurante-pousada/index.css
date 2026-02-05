@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --color01: #BA2FB5;
+    --color02: #5BA537;
+    --color03: #3E5035;
+}
+
+html, body{
+    height: 100vh;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--color02), var(--color03));
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header > h1, header > p{
+    color: var(--color01);
+    text-shadow: 1px 1px 0px black;
+}
+
+nav{
+    background-color: var(--color03) ;
+}
