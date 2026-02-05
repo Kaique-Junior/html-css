@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<style>
+    table{
+        width: 400px;
+        height: 700px;
+        border-collapse: collapse;
+    }
+
+    td::before{
+        content: "R$";
+    }
+
+    td, th{
+        border: 1px solid black;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    td.ganhos{
+        background-color: green;
+    }
+</style>
+
+<body>
+    <h1>Minha primeira Tabela usando HTML5</h1>
+    <table>
+        <tr>
+            <td class="ganhos">A1</td>
+            <td>A2</td>
+            <td class="ganhos">A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td class="ganhos">B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td class="ganhos">C1</td>
+            <td>C2</td>
+            <td class="ganhos">C3</td>
+        </tr>
+        <tr>
+            <td>D1</td>
+            <td class="ganhos">D2</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <th>
+                520
+            </th>
+        </tr>
+    </table>
+</body>
+</html>
