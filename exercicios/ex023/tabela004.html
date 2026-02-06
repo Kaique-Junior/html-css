@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes Preferidos</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            background-color: rgb(255, 234, 117);
+        }
+
+        :root{
+            --colorth: rgb(214, 157, 157);
+        }
+
+        h1{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 20px;
+            background-color: var(--colorth);
+            color: rgb(0, 0, 0);
+            font-variant: small-caps;
+            box-shadow: 1px 1px 8px;
+        }
+
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            width: 450px;
+            box-shadow: 1px 0px 8px;
+        }
+
+        caption{
+            box-shadow: 1px 0px 8px;
+            font-size: 1.3em;
+            font-weight: bolder;
+            font-variant: small-caps;
+            border: 1px solid black;
+        }
+
+        th, caption{
+            background-color: var(--colorth);
+            color: black;
+        }
+
+        td, th, caption{
+            padding: 10px;
+            text-align: center;
+            border: 1.4px solid rgb(0, 0, 0);
+        }
+
+        .Filmes{
+            background-color: rgb(237, 253, 198);
+        }
+
+        .mulher{
+            background-color: rgba(255, 192, 203, 0.555);
+        }
+
+        .homem{
+            background-color:rgb(124, 124, 253);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+
+            
+        <tbody>
+            
+            <!--Mulher-->
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td class="mulher">Ana Maria Santos</td>
+                <td class="Filmes">Alien</td>
+                <td class="Filmes">Rambo</td>
+                <td class="Filmes">Vingadores</td>
+            </tr>
+            <tr>
+                <td class="mulher">Beatriz Souza</td>
+                <td class="Filmes">Hulk</td>
+                <td class="Filmes">Inception</td>
+                <td class="Filmes">Batman</td>
+            </tr>
+            <tr>
+                <td class="mulher">Cláudia Melo</td>
+                <td class="Filmes">Oblivion</td>
+                <td class="Filmes">Matrix</td>
+                <td class="Filmes">Big Hero</td>
+            </tr>
+
+            <!--HOMEM-->
+            <tr> 
+                <th rowspan="4" scope="rowgroup">Homens</th>
+                <td class="homem">Bruno Mendonça</td>
+                <td class="Filmes">Intocáveis</td>
+                <td class="Filmes">Amnésia</td>
+                <td class="Filmes">Gladiador</td>
+            </tr>
+
+            <tr>
+                <td class="homem">Daniel Lourenço</td>
+                <td class="Filmes">Wall-E</td>
+                <td class="Filmes">Oldboy</td>
+                <td class="Filmes">Dangal</td>
+            </tr>
+            <tr>
+                <td class="homem">Fabiano Mota</td>
+                <td class="Filmes">Star Wars 5</td>
+                <td class="Filmes">Taxi Driver</td>
+                <td class="Filmes">Toy Story</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
