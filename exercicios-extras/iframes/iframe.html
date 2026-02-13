@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html, body{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(162, 208, 248);
+    }
+
+    main{
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+        background-color: blueviolet;
+    }
+
+    section#centro{
+        /* Sempre irá ficar no meio de onde está seu "Pai" hierarquia */
+        /* Main > Section#centro */
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        width: 325px;
+        height: 500px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px;
+    }
+
+    section#botoes{
+        display: flex;
+        justify-content: center;
+    }
+
+    section#botoes img{
+        width: 80px;
+        margin-top: 50px;
+        margin-right: 20px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 10px black;
+    }
+
+    section#botoes img:hover{
+        border: 2px solid white;
+        transform: translate(-3px, -3px);
+
+
+        transition: .3s;
+
+    }
+
+    iframe{
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        height: 450px;
+        border-radius: 12px;
+    }
+
+</style>
+
+<body>
+    <main>
+        <section id="centro">
+            <iframe src="pages-frames/page001.html" frameborder="0" name="frame"></iframe>
+        </section>
+        <section id="botoes">
+            <a href="pages-frames/page001.html" target="frame">
+                <img src="imagens/logo-home.jpg" alt="home">
+            </a>
+
+            <a href="pages-frames/instagram.html" target="frame">
+                <img src="imagens/logo-instagram.jpg" alt="instagram">
+            </a>
+        </section>
+    </main>
+</body>
+</html>
