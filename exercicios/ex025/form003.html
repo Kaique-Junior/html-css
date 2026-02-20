@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+    <style>
+        input{
+            background-color: aliceblue;
+            border-color: darkblue;
+            height: 25px;
+        }
+    </style>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="get" autocomplete="off">
     <p>
         <label for="inome">Nome:</label>
         <input type="text" name="nome" id="inome" required maxlength="30"
@@ -21,7 +28,7 @@
 
     <p>
         <label for="imes">Período Letivo:</label>
-        <input type="month" name="mes" id="imes">
+        <input type="month" name="mes" id="imes" required>
     </p>
 
     <p>
